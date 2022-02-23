@@ -1,0 +1,22 @@
+@import '../../styles/tools';
+
+.user-list {
+  min-width: 95%;
+  border: rem(1) solid $gray-200;
+
+  & > * > * {
+    padding: rem(12);
+  }
+
+  & > * > :last-child {
+    border-left: rem(1) solid $gray-200;
+  }
+
+  & > :nth-child(even) {
+    background: $gray-100;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    min-width: 50%;
+  }
+}
